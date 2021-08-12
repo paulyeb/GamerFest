@@ -322,10 +322,9 @@
         <div class="modal-dialog">
             <div class="modal-content">
                     <div class="modal-header">
-                        <div class="modal-title d-flex">
+                        <div class="modal-title">
                             <h5>Fill out this form and we will get back to you</h5>
                         </div>
-                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
                         <div class="form-group form">
@@ -345,11 +344,12 @@
                             <input type="checkbox"  id="checkbox">
                             I am 18+ years
                         </label>
+                        <div class="text-end">
+                            <input class="btn btn-dark" type="button" value="Close" data-bs-dismiss="modal">
+                            <input class="btn btn-warning px-2" type="button" value="Submit" data-bs-toggle="modal" data-bs-target="#successModal" data-bs-dismiss="modal">
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                        <input class="btn btn-dark" type="button" value="Close" data-bs-dismiss="modal">
-                        <input class="btn btn-warning px-2" type="button" value="Submit" data-bs-toggle="modal" data-bs-target="#successModal" data-bs-dismiss="modal">
-                    </div>    
+    
             </div>
         </div>
     </div>
@@ -357,19 +357,13 @@
     <div class="modal fade" id="successModal">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <div class="modal-title">
-
-                    </div>
-                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
-                </div>
                 <div class="modal-body">
                     <p class="lead">
                         Enrollment application successful. We will get back to you soon.
                     </p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-warning px-4" data-bs-dismiss="modal">Close</button>
+                    <div class=" text-end">
+                        <button class="btn btn-warning px-4" data-bs-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -24,15 +24,3 @@
 .btn:hover{
     transform: scale(0.98);
 }
-
-.form input{
-    border: none;
-    border-bottom: 1px solid #ddd;
-    width: 100%;
-    display: block;
-      
-}
-
-.form input:focus{
-    outline: none;
-}
