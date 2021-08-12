@@ -1,0 +1,38 @@
+@media(min-width:768px){
+    .animate{
+        transition: transform 0.3s ease-in;
+    }
+    
+    .animate:hover{
+        transform: scale(1.06);
+        cursor: pointer;
+    }
+    .transform{
+        transition: transform 0.3s ease-in;
+    }
+    
+    .transform:hover{
+        transform: scale(1.06);
+        cursor: pointer;
+    }
+}
+
+.btn{
+    transition: transform 0.3s ease-in;
+}
+
+.btn:hover{
+    transform: scale(0.98);
+}
+
+.form input{
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    display: block;
+      
+}
+
+.form input:focus{
+    outline: none;
+}
