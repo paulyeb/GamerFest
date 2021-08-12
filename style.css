@@ -15,6 +15,32 @@
         transform: scale(1.06);
         cursor: pointer;
     }
+
+    @keyframes slideInFromLeft{
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideInFromRight{
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .abuuzu{
+        animation: slideInFromLeft 1s ease-in;
+    } 
+
+    .abuuzug{
+        animation: slideInFromRight 1s ease-in;
+    }    
 }
 
 .btn{
@@ -23,4 +49,12 @@
 
 .btn:hover{
     transform: scale(0.98);
+}
+
+.arrow-circle-up{
+    transition: transform 0.1s ease-in;
+}
+
+.arrow-circle-up:hover{
+    transform: scale(1.03);
 }
