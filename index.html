@@ -58,8 +58,10 @@
                 </div>
                 <div class="col">
                     <div class="d-sm-flex d-block">
-                        <input class="form-control m-1" type="text">
-                        <button class="btn btn-dark m-1">Subscribe</button>
+                        <form>
+                            <input class="form-control m-1" type="email" placeholder="Enter email here to subscribe">
+                            <button class="btn btn-dark m-1" type="submit">Subscribe</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -327,35 +329,36 @@
     <div class="modal fade" id="enrollmentForm">
         <div class="modal-dialog">
             <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="modal-title">
-                            <h5 class="mx-4">Fill out this form and we will get back to you</h5>
-                        </div>
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <h5 class="mx-4">Fill out this form and we will get back to you</h5>
                     </div>
-                    <div class="modal-body">
-                        <form class="form-group" id='form'>
-                            <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control mb-3" id="firstName" placeholder="Enter Your First Name">
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" id='form'>
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control mb-3" id="firstName" required placeholder="Enter Your First Name Here">
 
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control mb-3" id="lastName"placeholder="Enter Your Last Name">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control mb-3" id="lastName"required placeholder="Enter Your Last Name Here">
 
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control mb-3" id="email"placeholder="Enter Your Email">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control mb-3" id="email"required placeholder="Enter Your Email Here">
 
-                            <label for="phone" class="form-label">Phone</label>
-                            <input type="tel" class="form-control mb-3" id="phone" placeholder="Enter Your Phone Number">    
-                        </form>
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control mb-3" id="phone" required placeholder="Enter Your Phone Number Here">    
                         <label for="checkbox" class="form-label text-muted">
-                            <input type="checkbox"  id="checkbox">
-                            I am 18+ years
+                            <input type="checkbox"  id="checkbox" required>
+                            I am not a robot
                         </label>
                         <div class="text-end">
-                            <input class="btn btn-dark mx-1" type="button" value="Close" data-bs-dismiss="modal">
-                            <input class="btn btn-warning mx-1 px-3" type="submit" value="Submit" data-bs-toggle="modal" data-bs-target="#successModal" data-bs-dismiss="modal">
+                            <form>
+                                <input class="btn btn-dark mx-1" type="button" value="Close" data-bs-dismiss="modal">
+                                <input class="btn btn-warning mx-1 px-3" type="submit" value="Submit" data-bs-toggle="modal" data-bs-target="#successModal" data-bs-dismiss="modal">
+                            </form>
                         </div>
-                    </div>
-    
+                    </form>
+                </div>
             </div>
         </div>
     </div>
