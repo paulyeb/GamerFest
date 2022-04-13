@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>GamerFest Bootcamp</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <div class="container">
@@ -161,9 +162,9 @@
                 <h2>Frequently Asked Questions</h2>
             </div>
 
-            <div class="accordion accordion-flush" id="questions">
+            <div class="accordion accordion-flush">
                <div class="accordion-item">
-                   <h2 class="accordion-header accord" id="flush-headingOne">
+                   <h2 class="accordion-header" id="flush-headingOne">
                        <div class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
                            Where exactly are you located?
                        </div>
@@ -332,7 +333,7 @@
                         </div>
                     </div>
                     <div class="modal-body">
-                        <div class="form-group form">
+                        <form class="form-group" id='form'>
                             <label for="firstName" class="form-label">First Name</label>
                             <input type="text" class="form-control mb-3" id="firstName" placeholder="Enter Your First Name">
 
@@ -343,21 +344,23 @@
                             <input type="email" class="form-control mb-3" id="email"placeholder="Enter Your Email">
 
                             <label for="phone" class="form-label">Phone</label>
-                            <input type="tel" class="form-control mb-3" id="phone"placeholder="Enter Your Phone Number">    
-                        </div>
+                            <input type="tel" class="form-control mb-3" id="phone" placeholder="Enter Your Phone Number">    
+                        </form>
                         <label for="checkbox" class="form-label text-muted">
                             <input type="checkbox"  id="checkbox">
                             I am 18+ years
                         </label>
                         <div class="text-end">
                             <input class="btn btn-dark mx-1" type="button" value="Close" data-bs-dismiss="modal">
-                            <input class="btn btn-warning mx-1 px-3" type="button" value="Submit" data-bs-toggle="modal" data-bs-target="#successModal" data-bs-dismiss="modal">
+                            <input class="btn btn-warning mx-1 px-3" type="submit" value="Submit" data-bs-toggle="modal" data-bs-target="#successModal" data-bs-dismiss="modal">
                         </div>
                     </div>
     
             </div>
         </div>
     </div>
+
+<button type="button" class="btn btn-link">Link</button>
 
     <div class="modal fade" id="successModal">
         <div class="modal-dialog">
@@ -375,5 +378,6 @@
         </div>
     </div>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
