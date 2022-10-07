@@ -8,9 +8,14 @@ function addData(e){
     const firstName = document.getElementById('firstName').value
     const lastName = document.getElementById('lastName').value
     const email = document.getElementById('email').value
-    const phone = document.getElementById('tel').value
+    const phone = document.getElementById('phone').value
     const checkbox = document.getElementById('checkbox').value
 
+    // const newMember = {
+    //     name: `${firstName} ${lastName}`,
+    //     email,
+    //     phone
+    // }
 
     console.log('First Name: ' + firstName)
     console.log('Last Name: ' + lastName)
